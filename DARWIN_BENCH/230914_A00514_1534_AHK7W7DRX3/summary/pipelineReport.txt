@@ -1,0 +1,34 @@
+========================================
+bclconvert v@git_commit@
+========================================
+Run Name: berserk_stallman
+
+## bclconvert execution completed successfully! ##
+
+
+## bclconvert execution completed successfully! ##
+
+
+The workflow was completed at 2024-05-31T19:38:09.792800+02:00 (duration: 7m 58s)
+
+The command used to launch the workflow was as follows:
+
+  /mnt/beegfs/common/apps/nextflow/nextflow-22.10.6/nextflow-22.10.6-all run /mnt/beegfs/home/ljourdai/pipeline/bclconvert-dsl2/main.nf -profile cluster,singularity -w /mnt/beegfs/home/ljourdai/data/results/workdir_1 --outDir /mnt/beegfs/home/ljourdai/data/results/outdir_1 --sampleSheet /mnt/beegfs/home/ljourdai/data/230914_A00514_1534_AHK7W7DRX3/20230914-A-CDR-S1-XP-5367.csv --bclDir /mnt/beegfs/home/ljourdai/data/230914_A00514_1534_AHK7W7DRX3 --singularityImagePath /mnt/beegfs/home/ljourdai/data/singularity --containers.specificBinds '/mnt/beegfs/home/ljourdai/data/results/workdir_1,/mnt/beegfs/home/ljourdai/data/results/outdir_1,/mnt/beegfs/home/ljourdai/data/bcl2convert_log:/var/log' --autoconfig true --sequencing NOVASEQ
+
+
+
+Pipeline Configuration:
+-----------------------
+ - Pipeline: @git_repo_name@
+ - Version: @git_commit@
+ - Run Name: berserk_stallman
+ - Max Resources: 180 GB memory, 40 cpus, 2d time per job
+ - Profile: cluster,singularity
+ - OutDir: /mnt/beegfs/home/ljourdai/data/results/outdir_1
+ - WorkDir: /mnt/beegfs/home/ljourdai/data/results/workdir_1
+ - CommandLine: /mnt/beegfs/common/apps/nextflow/nextflow-22.10.6/nextflow-22.10.6-all run /mnt/beegfs/home/ljourdai/pipeline/bclconvert-dsl2/main.nf -profile cluster,singularity -w /mnt/beegfs/home/ljourdai/data/results/workdir_1 --outDir /mnt/beegfs/home/ljourdai/data/results/outdir_1 --sampleSheet /mnt/beegfs/home/ljourdai/data/230914_A00514_1534_AHK7W7DRX3/20230914-A-CDR-S1-XP-5367.csv --bclDir /mnt/beegfs/home/ljourdai/data/230914_A00514_1534_AHK7W7DRX3 --singularityImagePath /mnt/beegfs/home/ljourdai/data/singularity --containers.specificBinds '/mnt/beegfs/home/ljourdai/data/results/workdir_1,/mnt/beegfs/home/ljourdai/data/results/outdir_1,/mnt/beegfs/home/ljourdai/data/bcl2convert_log:/var/log' --autoconfig true --sequencing NOVASEQ
+ - Autoconfig: true
+
+--
+bcl-convert
+https://gitlab.curie.fr/data-analysis/bclconvert

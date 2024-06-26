@@ -1,0 +1,49 @@
+<html>
+<head>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Bclconvert analysis pipeline (Institut Curie)">
+  <title>bclconvert Pipeline Report</title>
+</head>
+<body>
+<div style="font-family: Helvetica, Arial, sans-serif; padding: 30px; max-width: 800px; margin: 0 auto;">
+
+<h1>bclconvert v@git_commit@</h1>
+
+
+    <div style="color: #3c763d; background-color: #dff0d8; border-color: #d6e9c6; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;">
+        bclconvert execution completed successfully!
+    </div>
+    
+
+<p>The workflow was completed at <strong>2024-05-21T22:55:59.082925+02:00</strong> (duration: <strong>3m 18s</strong>)</p>
+<p>The command used to launch the workflow was as follows:</p>
+<pre style="white-space: pre-wrap; overflow: visible; background-color: #ededed; padding: 15px; border-radius: 4px; margin-bottom:30px;">/mnt/beegfs/common/apps/nextflow/nextflow-22.10.6/nextflow-22.10.6-all run /mnt/beegfs/home/ljourdai/pipeline/bclconvert-dsl2/main.nf -profile cluster,singularity -w /mnt/beegfs/home/ljourdai/data/results/workdir_1 --outDir /mnt/beegfs/home/ljourdai/data/results/outdir_1 --sampleSheet /mnt/beegfs/home/ljourdai/data/240416_A00514_1756_BH52LJDRX5/20240416_FCB_CutRun-5751.csv --bclDir /mnt/beegfs/home/ljourdai/data/240416_A00514_1756_BH52LJDRX5 --singularityImagePath /mnt/beegfs/home/ljourdai/data/singularity --containers.specificBinds '/mnt/beegfs/home/ljourdai/data/results/workdir_1,/mnt/beegfs/home/ljourdai/data/results/outdir_1,/mnt/beegfs/home/ljourdai/data/bcl2convert_log:/var/log'</pre>
+
+<h3>Pipeline Configuration:</h3>
+<table style="width:100%; max-width:100%; border-spacing: 0; border-collapse: collapse; border:0; margin-bottom: 30px;">
+    <tbody style="border-bottom: 1px solid #ddd;">
+        <tr><th style='text-align:left; padding: 8px 0; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'>Pipeline</th><td style='text-align:left; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'><pre style='white-space: pre-wrap; overflow: visible;'>@git_repo_name@</pre></td></tr>
+<tr><th style='text-align:left; padding: 8px 0; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'>Version</th><td style='text-align:left; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'><pre style='white-space: pre-wrap; overflow: visible;'>@git_commit@</pre></td></tr>
+<tr><th style='text-align:left; padding: 8px 0; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'>Run Name</th><td style='text-align:left; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'><pre style='white-space: pre-wrap; overflow: visible;'>boring_colden</pre></td></tr>
+<tr><th style='text-align:left; padding: 8px 0; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'>Max Resources</th><td style='text-align:left; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'><pre style='white-space: pre-wrap; overflow: visible;'>180 GB memory, 40 cpus, 2d time per job</pre></td></tr>
+<tr><th style='text-align:left; padding: 8px 0; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'>Profile</th><td style='text-align:left; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'><pre style='white-space: pre-wrap; overflow: visible;'>cluster,singularity</pre></td></tr>
+<tr><th style='text-align:left; padding: 8px 0; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'>OutDir</th><td style='text-align:left; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'><pre style='white-space: pre-wrap; overflow: visible;'>/mnt/beegfs/home/ljourdai/data/results/outdir_1</pre></td></tr>
+<tr><th style='text-align:left; padding: 8px 0; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'>WorkDir</th><td style='text-align:left; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'><pre style='white-space: pre-wrap; overflow: visible;'>/mnt/beegfs/home/ljourdai/data/results/workdir_1</pre></td></tr>
+<tr><th style='text-align:left; padding: 8px 0; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'>CommandLine</th><td style='text-align:left; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'><pre style='white-space: pre-wrap; overflow: visible;'>/mnt/beegfs/common/apps/nextflow/nextflow-22.10.6/nextflow-22.10.6-all run /mnt/beegfs/home/ljourdai/pipeline/bclconvert-dsl2/main.nf -profile cluster,singularity -w /mnt/beegfs/home/ljourdai/data/results/workdir_1 --outDir /mnt/beegfs/home/ljourdai/data/results/outdir_1 --sampleSheet /mnt/beegfs/home/ljourdai/data/240416_A00514_1756_BH52LJDRX5/20240416_FCB_CutRun-5751.csv --bclDir /mnt/beegfs/home/ljourdai/data/240416_A00514_1756_BH52LJDRX5 --singularityImagePath /mnt/beegfs/home/ljourdai/data/singularity --containers.specificBinds '/mnt/beegfs/home/ljourdai/data/results/workdir_1,/mnt/beegfs/home/ljourdai/data/results/outdir_1,/mnt/beegfs/home/ljourdai/data/bcl2convert_log:/var/log'</pre></td></tr>
+<tr><th style='text-align:left; padding: 8px 0; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'>Autoconfig</th><td style='text-align:left; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd;'><pre style='white-space: pre-wrap; overflow: visible;'>true</pre></td></tr>
+    </tbody>
+</table>
+
+<p>bclconvert</p>
+<p><a
+href="https://gitlab.curie.fr/data-analysis/bclconvert">https://gitlab.curie.fr/data-analysis/bclconvert/a></p>
+
+</div>
+
+</body>
+</html>
+

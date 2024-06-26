@@ -1,0 +1,94 @@
+========================================
+bclconvert v@git_commit@
+========================================
+Run Name: infallible_koch
+
+####################################################
+## bclconvert execution completed unsuccessfully! ##
+####################################################
+The exit status of the task that caused the workflow execution to fail was: 1.
+The full error message was:
+
+Error executing process > 'bclconvert (1)'
+
+Caused by:
+  Process `bclconvert (1)` terminated with an error exit status (1)
+
+Command executed:
+
+  bcl-convert --bcl-input-directory /mnt/beegfs/home/ljourdai/data/240124_A00514_1681_AH55VVDSXC  --no-lane-splitting true --sample-sheet /mnt/beegfs/home/ljourdai/data/240124_A00514_1681_AH55VVDSXC/ --output-directory /mnt/beegfs/home/ljourdai/data/results/outdir_1 --force
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  INFO:    Converting SIF file to temporary sandbox...
+  ERROR: RunInfo.xml does not exist at /mnt/beegfs/home/ljourdai/data/240124_A00514_1681_AH55VVDSXC/RunInfo.xml
+  INFO:    Cleaning up image...
+
+Work dir:
+  /mnt/beegfs/home/ljourdai/data/results/workdir_1/a5/0312f8251ec40b95e9ccd3b84be9d3
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+
+
+####################################################
+## bcl-convert execution completed unsuccessfully! ##
+####################################################
+The exit status of the task that caused the workflow execution to fail was: 1.
+The full error message was:
+
+Error executing process > 'bclconvert (1)'
+
+Caused by:
+  Process `bclconvert (1)` terminated with an error exit status (1)
+
+Command executed:
+
+  bcl-convert --bcl-input-directory /mnt/beegfs/home/ljourdai/data/240124_A00514_1681_AH55VVDSXC  --no-lane-splitting true --sample-sheet /mnt/beegfs/home/ljourdai/data/240124_A00514_1681_AH55VVDSXC/ --output-directory /mnt/beegfs/home/ljourdai/data/results/outdir_1 --force
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  INFO:    Converting SIF file to temporary sandbox...
+  ERROR: RunInfo.xml does not exist at /mnt/beegfs/home/ljourdai/data/240124_A00514_1681_AH55VVDSXC/RunInfo.xml
+  INFO:    Cleaning up image...
+
+Work dir:
+  /mnt/beegfs/home/ljourdai/data/results/workdir_1/a5/0312f8251ec40b95e9ccd3b84be9d3
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+
+
+The workflow was completed at 2024-06-05T18:11:23.987460+02:00 (duration: 22.7s)
+
+The command used to launch the workflow was as follows:
+
+  /mnt/beegfs/common/apps/nextflow/nextflow-22.10.6/nextflow-22.10.6-all run /mnt/beegfs/home/ljourdai/pipeline/bclconvert-dsl2/main.nf -profile cluster,singularity -w /mnt/beegfs/home/ljourdai/data/results/workdir_1 --outDir /mnt/beegfs/home/ljourdai/data/results/outdir_1 --sampleSheet /mnt/beegfs/home/ljourdai/data/240124_A00514_1681_AH55VVDSXC/ --bclDir /mnt/beegfs/home/ljourdai/data/240124_A00514_1681_AH55VVDSXC --singularityImagePath /mnt/beegfs/home/ljourdai/data/singularity --containers.specificBinds '/mnt/beegfs/home/ljourdai/data/results/workdir_1,/mnt/beegfs/home/ljourdai/data/results/outdir_1,/mnt/beegfs/home/ljourdai/data/bcl2convert_log:/var/log' --autoconfig true --sequencing NOVASEQ
+
+
+
+Pipeline Configuration:
+-----------------------
+ - Pipeline: @git_repo_name@
+ - Version: @git_commit@
+ - Run Name: infallible_koch
+ - Max Resources: 180 GB memory, 40 cpus, 2d time per job
+ - Profile: cluster,singularity
+ - OutDir: /mnt/beegfs/home/ljourdai/data/results/outdir_1
+ - WorkDir: /mnt/beegfs/home/ljourdai/data/results/workdir_1
+ - CommandLine: /mnt/beegfs/common/apps/nextflow/nextflow-22.10.6/nextflow-22.10.6-all run /mnt/beegfs/home/ljourdai/pipeline/bclconvert-dsl2/main.nf -profile cluster,singularity -w /mnt/beegfs/home/ljourdai/data/results/workdir_1 --outDir /mnt/beegfs/home/ljourdai/data/results/outdir_1 --sampleSheet /mnt/beegfs/home/ljourdai/data/240124_A00514_1681_AH55VVDSXC/ --bclDir /mnt/beegfs/home/ljourdai/data/240124_A00514_1681_AH55VVDSXC --singularityImagePath /mnt/beegfs/home/ljourdai/data/singularity --containers.specificBinds '/mnt/beegfs/home/ljourdai/data/results/workdir_1,/mnt/beegfs/home/ljourdai/data/results/outdir_1,/mnt/beegfs/home/ljourdai/data/bcl2convert_log:/var/log' --autoconfig true --sequencing NOVASEQ
+ - Autoconfig: true
+
+--
+bcl-convert
+https://gitlab.curie.fr/data-analysis/bclconvert

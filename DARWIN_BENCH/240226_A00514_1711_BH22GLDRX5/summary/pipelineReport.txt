@@ -1,0 +1,98 @@
+========================================
+bclconvert v@git_commit@
+========================================
+Run Name: chaotic_kare
+
+####################################################
+## bclconvert execution completed unsuccessfully! ##
+####################################################
+The exit status of the task that caused the workflow execution to fail was: 1.
+The full error message was:
+
+Error executing process > 'bclconvert (1)'
+
+Caused by:
+  Process `bclconvert (1)` terminated with an error exit status (1)
+
+Command executed:
+
+  bcl-convert --bcl-input-directory /mnt/beegfs/home/ljourdai/data/240226_A00514_1711_BH22GLDRX5  --no-lane-splitting true --sample-sheet /mnt/beegfs/home/ljourdai/data/240226_A00514_1711_BH22GLDRX5/20240226_FCA_SP_PE76-8-69-76.csv --output-directory /mnt/beegfs/home/ljourdai/data/results/outdir_1 --force
+
+Command exit status:
+  1
+
+Command output:
+  Sample sheet being processed by common lib? No
+  SampleSheet Settings: 
+    <none>
+
+Command error:
+  INFO:    Converting SIF file to temporary sandbox...
+  ERROR: Sample Sheet Error: SampleSheet.csv sample #1 (index '') has an index of length 0 bases, but a length of 69 was expected based upon RunInfo.xml or the OverrideCycles setting.
+  INFO:    Cleaning up image...
+
+Work dir:
+  /mnt/beegfs/home/ljourdai/data/results/workdir_1/5d/810226580b2c96ca2e5c6751c4e7dd
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+
+
+####################################################
+## bcl-convert execution completed unsuccessfully! ##
+####################################################
+The exit status of the task that caused the workflow execution to fail was: 1.
+The full error message was:
+
+Error executing process > 'bclconvert (1)'
+
+Caused by:
+  Process `bclconvert (1)` terminated with an error exit status (1)
+
+Command executed:
+
+  bcl-convert --bcl-input-directory /mnt/beegfs/home/ljourdai/data/240226_A00514_1711_BH22GLDRX5  --no-lane-splitting true --sample-sheet /mnt/beegfs/home/ljourdai/data/240226_A00514_1711_BH22GLDRX5/20240226_FCA_SP_PE76-8-69-76.csv --output-directory /mnt/beegfs/home/ljourdai/data/results/outdir_1 --force
+
+Command exit status:
+  1
+
+Command output:
+  Sample sheet being processed by common lib? No
+  SampleSheet Settings: 
+    <none>
+
+Command error:
+  INFO:    Converting SIF file to temporary sandbox...
+  ERROR: Sample Sheet Error: SampleSheet.csv sample #1 (index '') has an index of length 0 bases, but a length of 69 was expected based upon RunInfo.xml or the OverrideCycles setting.
+  INFO:    Cleaning up image...
+
+Work dir:
+  /mnt/beegfs/home/ljourdai/data/results/workdir_1/5d/810226580b2c96ca2e5c6751c4e7dd
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+
+
+The workflow was completed at 2024-05-21T20:50:49.218860+02:00 (duration: 33.6s)
+
+The command used to launch the workflow was as follows:
+
+  /mnt/beegfs/common/apps/nextflow/nextflow-22.10.6/nextflow-22.10.6-all run /mnt/beegfs/home/ljourdai/pipeline/bclconvert-dsl2/main.nf -profile cluster,singularity -w /mnt/beegfs/home/ljourdai/data/results/workdir_1 --outDir /mnt/beegfs/home/ljourdai/data/results/outdir_1 --sampleSheet /mnt/beegfs/home/ljourdai/data/240226_A00514_1711_BH22GLDRX5/20240226_FCA_SP_PE76-8-69-76.csv --bclDir /mnt/beegfs/home/ljourdai/data/240226_A00514_1711_BH22GLDRX5 --singularityImagePath /mnt/beegfs/home/ljourdai/data/singularity --containers.specificBinds '/mnt/beegfs/home/ljourdai/data/results/workdir_1,/mnt/beegfs/home/ljourdai/data/results/outdir_1,/mnt/beegfs/home/ljourdai/data/bcl2convert_log:/var/log'
+
+
+
+Pipeline Configuration:
+-----------------------
+ - Pipeline: @git_repo_name@
+ - Version: @git_commit@
+ - Run Name: chaotic_kare
+ - Max Resources: 180 GB memory, 40 cpus, 2d time per job
+ - Profile: cluster,singularity
+ - OutDir: /mnt/beegfs/home/ljourdai/data/results/outdir_1
+ - WorkDir: /mnt/beegfs/home/ljourdai/data/results/workdir_1
+ - CommandLine: /mnt/beegfs/common/apps/nextflow/nextflow-22.10.6/nextflow-22.10.6-all run /mnt/beegfs/home/ljourdai/pipeline/bclconvert-dsl2/main.nf -profile cluster,singularity -w /mnt/beegfs/home/ljourdai/data/results/workdir_1 --outDir /mnt/beegfs/home/ljourdai/data/results/outdir_1 --sampleSheet /mnt/beegfs/home/ljourdai/data/240226_A00514_1711_BH22GLDRX5/20240226_FCA_SP_PE76-8-69-76.csv --bclDir /mnt/beegfs/home/ljourdai/data/240226_A00514_1711_BH22GLDRX5 --singularityImagePath /mnt/beegfs/home/ljourdai/data/singularity --containers.specificBinds '/mnt/beegfs/home/ljourdai/data/results/workdir_1,/mnt/beegfs/home/ljourdai/data/results/outdir_1,/mnt/beegfs/home/ljourdai/data/bcl2convert_log:/var/log'
+ - Autoconfig: true
+
+--
+bcl-convert
+https://gitlab.curie.fr/data-analysis/bclconvert

@@ -1,0 +1,110 @@
+========================================
+bclconvert v@git_commit@
+========================================
+Run Name: hopeful_hopper
+
+####################################################
+## bclconvert execution completed unsuccessfully! ##
+####################################################
+The exit status of the task that caused the workflow execution to fail was: 1.
+The full error message was:
+
+Error executing process > 'bclconvert (1)'
+
+Caused by:
+  Process `bclconvert (1)` terminated with an error exit status (1)
+
+Command executed:
+
+  bcl-convert --bcl-input-directory /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3  --no-lane-splitting false --sample-sheet /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv --output-directory /mnt/beegfs/home/ljourdai/data/results/outdir_1 --force
+
+Command exit status:
+  1
+
+Command output:
+  Sample sheet being processed by common lib? No
+  SampleSheet Settings: 
+    Read1UMILength = 7
+    Read2UMILength = 7
+    Read1StartFromCycle = 9
+    Read2StartFromCycle = 9
+
+Command error:
+  INFO:    Converting SIF file to temporary sandbox...
+  ERROR: Sample Sheet Error: /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv [Settings] includes a deprecated setting 'Read1UMILength'
+  ERROR: Sample Sheet Error: /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv [Settings] includes a deprecated setting 'Read2UMILength'
+  ERROR: Sample Sheet Error: /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv [Settings] includes a deprecated setting 'Read1StartFromCycle'
+  ERROR: Sample Sheet Error: /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv [Settings] includes a deprecated setting 'Read2StartFromCycle'
+  INFO:    Cleaning up image...
+
+Work dir:
+  /mnt/beegfs/home/ljourdai/data/results/workdir_1/a0/a8c232c81b80d7d141777ecb29b54f
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+
+
+####################################################
+## bcl-convert execution completed unsuccessfully! ##
+####################################################
+The exit status of the task that caused the workflow execution to fail was: 1.
+The full error message was:
+
+Error executing process > 'bclconvert (1)'
+
+Caused by:
+  Process `bclconvert (1)` terminated with an error exit status (1)
+
+Command executed:
+
+  bcl-convert --bcl-input-directory /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3  --no-lane-splitting false --sample-sheet /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv --output-directory /mnt/beegfs/home/ljourdai/data/results/outdir_1 --force
+
+Command exit status:
+  1
+
+Command output:
+  Sample sheet being processed by common lib? No
+  SampleSheet Settings: 
+    Read1UMILength = 7
+    Read2UMILength = 7
+    Read1StartFromCycle = 9
+    Read2StartFromCycle = 9
+
+Command error:
+  INFO:    Converting SIF file to temporary sandbox...
+  ERROR: Sample Sheet Error: /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv [Settings] includes a deprecated setting 'Read1UMILength'
+  ERROR: Sample Sheet Error: /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv [Settings] includes a deprecated setting 'Read2UMILength'
+  ERROR: Sample Sheet Error: /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv [Settings] includes a deprecated setting 'Read1StartFromCycle'
+  ERROR: Sample Sheet Error: /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv [Settings] includes a deprecated setting 'Read2StartFromCycle'
+  INFO:    Cleaning up image...
+
+Work dir:
+  /mnt/beegfs/home/ljourdai/data/results/workdir_1/a0/a8c232c81b80d7d141777ecb29b54f
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+
+
+The workflow was completed at 2024-05-22T23:47:56.565316+02:00 (duration: 37.9s)
+
+The command used to launch the workflow was as follows:
+
+  /mnt/beegfs/common/apps/nextflow/nextflow-22.10.6/nextflow-22.10.6-all run /mnt/beegfs/home/ljourdai/pipeline/bclconvert-dsl2/main.nf -profile cluster,singularity -w /mnt/beegfs/home/ljourdai/data/results/workdir_1 --outDir /mnt/beegfs/home/ljourdai/data/results/outdir_1 --sampleSheet /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv --bclDir /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3 --singularityImagePath /mnt/beegfs/home/ljourdai/data/singularity --containers.specificBinds '/mnt/beegfs/home/ljourdai/data/results/workdir_1,/mnt/beegfs/home/ljourdai/data/results/outdir_1,/mnt/beegfs/home/ljourdai/data/bcl2convert_log:/var/log'
+
+
+
+Pipeline Configuration:
+-----------------------
+ - Pipeline: @git_repo_name@
+ - Version: @git_commit@
+ - Run Name: hopeful_hopper
+ - Max Resources: 180 GB memory, 40 cpus, 2d time per job
+ - Profile: cluster,singularity
+ - OutDir: /mnt/beegfs/home/ljourdai/data/results/outdir_1
+ - WorkDir: /mnt/beegfs/home/ljourdai/data/results/workdir_1
+ - CommandLine: /mnt/beegfs/common/apps/nextflow/nextflow-22.10.6/nextflow-22.10.6-all run /mnt/beegfs/home/ljourdai/pipeline/bclconvert-dsl2/main.nf -profile cluster,singularity -w /mnt/beegfs/home/ljourdai/data/results/workdir_1 --outDir /mnt/beegfs/home/ljourdai/data/results/outdir_1 --sampleSheet /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3/20240122_FCB_SP_XpWF_FlashSeq_5625-5626.csv --bclDir /mnt/beegfs/home/ljourdai/data/240122_A00514_1677_BHW7FVDRX3 --singularityImagePath /mnt/beegfs/home/ljourdai/data/singularity --containers.specificBinds '/mnt/beegfs/home/ljourdai/data/results/workdir_1,/mnt/beegfs/home/ljourdai/data/results/outdir_1,/mnt/beegfs/home/ljourdai/data/bcl2convert_log:/var/log'
+ - Autoconfig: true
+
+--
+bcl-convert
+https://gitlab.curie.fr/data-analysis/bclconvert

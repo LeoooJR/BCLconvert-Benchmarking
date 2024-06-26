@@ -1,0 +1,3 @@
+process	task_id	hash	native_id	module	container	tag	name	status	exit	submit	start	complete	duration	realtime	%cpu	%mem	rss	vmem	peak_rss	peak_vmem	rchar	wchar	syscr	syscw	read_bytes	write_bytes	attempt	workdir	scratch	queue	cpus	memory	disk	time	env
+bclconvert	1	aa/651e5d	1882503	-	/mnt/beegfs/home/ljourdai/data/singularity/bclconvert.sif	-	bclconvert (1)	COMPLETED	0	1717195817699	1717195866598	1717195966599	148900	99555	2219.4	8.5	17083904000	19220684800	17214849024	19379953664	35547519037	57152767496	139737	50304	2586099020	57152821662	1	/mnt/beegfs/home/ljourdai/data/results/workdir_1/aa/651e5de584359cc708b6b5288f29af	-	-	8	193273528320	-	172800000	PATH=$PATH:/mnt/beegfs/home/ljourdai/pipeline/bclconvert-dsl2/bin
+
